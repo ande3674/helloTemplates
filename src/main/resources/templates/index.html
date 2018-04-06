@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Templates</title>
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+<body>
+
+<h1>Hello Spring!</h1>
+
+<p>My favorite food is <span th:text="${favoriteFood}"></span></p>
+
+<p>My favorite TV show <span th:text="${favoriteTV}"></span></p>
+
+<h2>My favorite movies</h2>
+<ul>
+    <li th:each="movie : ${favoriteMovies}" th:text="${movie}"></li>
+</ul>
+
+<h2>Dog Picture</h2>
+
+<img src="../img/dogs.jpg">
+
+<p>This site was built by <span th:text="${author}"></span></p>
+
+
+</body>
+</html>
